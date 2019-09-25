@@ -1,0 +1,15 @@
+C:\Users\Facu\Desktop\ABMProducto-master\Proyecto\src\Deportivo\bin\Debug\Deportivo.exe.config
+C:\Users\Facu\Desktop\ABMProducto-master\Proyecto\src\Deportivo\bin\Debug\Deportivo.exe
+C:\Users\Facu\Desktop\ABMProducto-master\Proyecto\src\Deportivo\bin\Debug\Deportivo.pdb
+C:\Users\Facu\Desktop\ABMProducto-master\Proyecto\src\Deportivo\obj\Debug\Deportivo.csprojAssemblyReference.cache
+C:\Users\Facu\Desktop\ABMProducto-master\Proyecto\src\Deportivo\obj\Debug\Deportivo.frmPrincipal.resources
+C:\Users\Facu\Desktop\ABMProducto-master\Proyecto\src\Deportivo\obj\Debug\Deportivo.GUILayer.Login.frmLogin.resources
+C:\Users\Facu\Desktop\ABMProducto-master\Proyecto\src\Deportivo\obj\Debug\Deportivo.GUILayer.Ventas.frmABMUsuario.resources
+C:\Users\Facu\Desktop\ABMProducto-master\Proyecto\src\Deportivo\obj\Debug\Deportivo.GUILayer.Ventas.frmUsuarios.resources
+C:\Users\Facu\Desktop\ABMProducto-master\Proyecto\src\Deportivo\obj\Debug\Deportivo.GUILayer.Ventas.frmABMProducto.resources
+C:\Users\Facu\Desktop\ABMProducto-master\Proyecto\src\Deportivo\obj\Debug\Deportivo.GUILayer.Ventas.frmConsultaProductos.resources
+C:\Users\Facu\Desktop\ABMProducto-master\Proyecto\src\Deportivo\obj\Debug\Deportivo.Properties.Resources.resources
+C:\Users\Facu\Desktop\ABMProducto-master\Proyecto\src\Deportivo\obj\Debug\Deportivo.csproj.GenerateResource.cache
+C:\Users\Facu\Desktop\ABMProducto-master\Proyecto\src\Deportivo\obj\Debug\Deportivo.csproj.CoreCompileInputs.cache
+C:\Users\Facu\Desktop\ABMProducto-master\Proyecto\src\Deportivo\obj\Debug\Deportivo.exe
+C:\Users\Facu\Desktop\ABMProducto-master\Proyecto\src\Deportivo\obj\Debug\Deportivo.pdb

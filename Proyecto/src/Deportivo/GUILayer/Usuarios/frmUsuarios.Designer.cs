@@ -143,7 +143,9 @@
             this.cboPerfiles.Location = new System.Drawing.Point(74, 48);
             this.cboPerfiles.Name = "cboPerfiles";
             this.cboPerfiles.Size = new System.Drawing.Size(181, 21);
+            this.cboPerfiles.Sorted = true;
             this.cboPerfiles.TabIndex = 1;
+            this.cboPerfiles.SelectedIndexChanged += new System.EventHandler(this.CboPerfiles_SelectedIndexChanged);
             // 
             // lblEstado
             // 

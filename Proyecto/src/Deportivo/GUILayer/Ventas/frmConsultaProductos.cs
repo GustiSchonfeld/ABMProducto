@@ -192,7 +192,10 @@ namespace Deportivo.GUILayer.Ventas
             frmABMProducto frmDetalle = new frmABMProducto();
             frmDetalle.ShowDialog();
         }
-           
-    
+
+        private void BtnSalir_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

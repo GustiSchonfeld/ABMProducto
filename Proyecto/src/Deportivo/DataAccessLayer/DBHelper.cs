@@ -12,7 +12,7 @@ namespace Deportivo
 
         private DBHelper()
         {
-            string_conexion = "Data Source=localhost;Initial Catalog=Deportivo;User ID=sa;Password=*****";
+            string_conexion = "Data Source=FACU-PC\\SQLEXPRESS;Initial Catalog=Deportivo;Integrated Security=True";
         }
 
         public static DBHelper GetDBHelper()

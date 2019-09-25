@@ -169,6 +169,9 @@ namespace Deportivo.GUILayer.Ventas
                 DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders);
         }
 
+        private void CboPerfiles_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }
