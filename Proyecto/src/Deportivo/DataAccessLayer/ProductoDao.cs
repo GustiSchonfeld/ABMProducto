@@ -93,6 +93,47 @@ namespace Deportivo.DataAccessLayer
 
             return oProducto;
         }
+
+
+        internal bool Create(Producto oProducto)
+        {
+            string str_sql = "INSERT INTO Productos (nombre, id_marca, cantidad, precio_venta,fecha_alta, borrado)" +
+             " VALUES (" +
+             "'" + oProducto.Nombre + "'" + "," +
+             oProducto.Marca.IdMarca+ "," +
+              oProducto.Cantidad + "," +
+               oProducto.Precio_Venta + "," +
+                "getdate()" + "," +
+               " 0 "+
+                ")";
+
+            return (DBHelper.GetDBHelper().EjecutarSQL(str_sql) == 1);
+        }
+
+        internal bool Update(Producto oProducto)
+        {
+            
+            string str_sql = "UPDATE Productos " +
+                             "SET nombre=" + "'" + oProducto.Nombre + "'" + "," +
+                             " cantidad=" + oProducto.Cantidad+ "," +
+                             " precio_venta=" +   oProducto.Precio_Venta  + "," +
+                             //" fecha_alta=" + "'" + oProducto.Fecha_Alta + "'" + "," +
+                             " id_marca=" + oProducto.Marca.IdMarca +
+                             " WHERE id_producto=" + oProducto.IdProducto;
+
+            return (DBHelper.GetDBHelper().EjecutarSQL(str_sql) == 1);
+        }
+
+
+        internal bool Delete(Producto oProducto)
+        {
+
+            string str_sql = "UPDATE Productos " +
+                             "SET borrado=1 "+
+                             " WHERE id_producto=" + oProducto.IdProducto;
+
+            return (DBHelper.GetDBHelper().EjecutarSQL(str_sql) == 1);
+        }
     }
 
 }

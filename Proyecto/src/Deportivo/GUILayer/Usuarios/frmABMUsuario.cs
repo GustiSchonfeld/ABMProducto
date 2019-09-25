@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Deportivo.GUILayer.Usuarios
+namespace Deportivo.GUILayer.Ventas
 {
     public partial class frmABMUsuario : Form
     {
@@ -148,7 +148,7 @@ namespace Deportivo.GUILayer.Usuarios
 
                 case FormMode.delete:
                     {
-                        if (MessageBox.Show("Seguro que desea habilitar/deshabilitar el usuario seleccionado?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                        if (MessageBox.Show("Seguro que desea habilitar/deshabilitar el producto seleccionado?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                         {
                             
                             if (oUsuarioService.ModificarEstadoUsuario(oUsuarioSelected))

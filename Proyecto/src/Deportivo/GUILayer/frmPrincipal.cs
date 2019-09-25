@@ -1,6 +1,5 @@
-﻿using Deportivo.GUILayer.Ventas;
-using Deportivo.GUILayer.Login;
-using Deportivo.GUILayer.Usuarios;
+﻿using Deportivo.GUILayer.Login;
+using Deportivo.GUILayer.Ventas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

@@ -26,5 +26,25 @@ namespace Deportivo.BusinessLayer
         {
             return oProductoDao.GetProductoById(id);
         }
+
+        internal bool CrearProducto(Producto oProducto)
+        {
+            return oProductoDao.Create(oProducto);
+        }
+
+        internal bool ActualizarProducto(Producto oProductoSelected)
+        {
+            return oProductoDao.Update(oProductoSelected);
+        }
+
+        internal bool ModificarBorradoProducto(Producto oProductoSelected)
+        {
+            return oProductoDao.Delete(oProductoSelected);
+        }
+
+    
+    
+    
+    
     }
 }

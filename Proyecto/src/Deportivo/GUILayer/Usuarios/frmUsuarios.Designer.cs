@@ -1,4 +1,4 @@
-﻿namespace Deportivo.GUILayer.Usuarios
+﻿namespace Deportivo.GUILayer.Ventas
 {
     partial class frmUsuarios
     {

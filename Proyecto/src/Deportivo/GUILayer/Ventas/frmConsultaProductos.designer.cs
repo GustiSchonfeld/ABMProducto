@@ -41,9 +41,8 @@
             this.btnConsultar = new System.Windows.Forms.Button();
             this.dgvProductos = new System.Windows.Forms.DataGridView();
             this.btnDetalleProd = new System.Windows.Forms.Button();
-            this.btnQuitar = new System.Windows.Forms.Button();
+            this.btnBorrado = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.pnl_filtros.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
@@ -177,22 +176,23 @@
             this.btnDetalleProd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnDetalleProd.Enabled = false;
             this.btnDetalleProd.Image = global::Deportivo.Properties.Resources.editar;
-            this.btnDetalleProd.Location = new System.Drawing.Point(40, 463);
+            this.btnDetalleProd.Location = new System.Drawing.Point(46, 413);
             this.btnDetalleProd.Name = "btnDetalleProd";
-            this.btnDetalleProd.Size = new System.Drawing.Size(36, 35);
+            this.btnDetalleProd.Size = new System.Drawing.Size(44, 39);
             this.btnDetalleProd.TabIndex = 32;
             this.btnDetalleProd.UseVisualStyleBackColor = true;
             this.btnDetalleProd.Click += new System.EventHandler(this.btnDetalleProducto_Click_1);
             // 
-            // btnQuitar
+            // btnBorrado
             // 
-            this.btnQuitar.Enabled = false;
-            this.btnQuitar.Image = global::Deportivo.Properties.Resources.eliminar;
-            this.btnQuitar.Location = new System.Drawing.Point(81, 413);
-            this.btnQuitar.Name = "btnQuitar";
-            this.btnQuitar.Size = new System.Drawing.Size(40, 40);
-            this.btnQuitar.TabIndex = 35;
-            this.btnQuitar.UseVisualStyleBackColor = true;
+            this.btnBorrado.Enabled = false;
+            this.btnBorrado.Image = global::Deportivo.Properties.Resources.eliminar;
+            this.btnBorrado.Location = new System.Drawing.Point(98, 413);
+            this.btnBorrado.Name = "btnBorrado";
+            this.btnBorrado.Size = new System.Drawing.Size(40, 40);
+            this.btnBorrado.TabIndex = 35;
+            this.btnBorrado.UseVisualStyleBackColor = true;
+            this.btnBorrado.Click += new System.EventHandler(this.btnBorrado_Click);
             // 
             // btnSalir
             // 
@@ -203,16 +203,6 @@
             this.btnSalir.TabIndex = 36;
             this.btnSalir.UseVisualStyleBackColor = true;
             // 
-            // btnEditar
-            // 
-            this.btnEditar.Enabled = false;
-            this.btnEditar.Image = global::Deportivo.Properties.Resources.editar;
-            this.btnEditar.Location = new System.Drawing.Point(40, 413);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(40, 40);
-            this.btnEditar.TabIndex = 34;
-            this.btnEditar.UseVisualStyleBackColor = true;
-            // 
             // btnNuevo
             // 
             this.btnNuevo.Image = global::Deportivo.Properties.Resources.agregar;
@@ -221,15 +211,15 @@
             this.btnNuevo.Size = new System.Drawing.Size(40, 40);
             this.btnNuevo.TabIndex = 33;
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // frmConsultaProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(852, 524);
-            this.Controls.Add(this.btnQuitar);
+            this.Controls.Add(this.btnBorrado);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.btnDetalleProd);
             this.Controls.Add(this.dgvProductos);
@@ -260,9 +250,8 @@
         private System.Windows.Forms.TextBox txtNombre;
         internal System.Windows.Forms.Label label5;
         internal System.Windows.Forms.Button btnDetalleProd;
-        internal System.Windows.Forms.Button btnQuitar;
+        internal System.Windows.Forms.Button btnBorrado;
         internal System.Windows.Forms.Button btnSalir;
-        internal System.Windows.Forms.Button btnEditar;
         internal System.Windows.Forms.Button btnNuevo;
 
     }

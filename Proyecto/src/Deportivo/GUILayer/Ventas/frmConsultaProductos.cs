@@ -152,8 +152,9 @@ namespace Deportivo.GUILayer.Ventas
 
         private void dgvProductos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Cuando seleccionamos una fila de la grilla habilitamos el boton btnDetalleBug.
+            // Cuando seleccionamos una fila de la grilla habilitamos el boton btnDetalleBug y el boton de borrado.
             btnDetalleProd.Enabled = true;
+            btnBorrado.Enabled = true;
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -164,12 +165,32 @@ namespace Deportivo.GUILayer.Ventas
         {
            if (dgvProductos.CurrentRow != null)
             {
-                frmDetalleProducto frmDetalle = new frmDetalleProducto();
-                Producto selectedItem = (Producto)dgvProductos.CurrentRow.DataBoundItem;
+                frmABMProducto frmDetalle = new frmABMProducto();
+                var selectedItem = (Producto)dgvProductos.CurrentRow.DataBoundItem;
                 int seleccionado = (selectedItem.IdProducto)   ;
-                frmDetalle.InicializarDetalleProducto(selectedItem.IdProducto);
+                frmDetalle.SeleccionarProducto(frmABMProducto.FormMode.update, selectedItem);
                 frmDetalle.ShowDialog();
+                
             }
+        }
+
+        private void btnBorrado_Click(object sender, EventArgs e)
+        {
+            if (dgvProductos.CurrentRow != null)
+            {
+                frmABMProducto frmDetalle = new frmABMProducto();
+                var selectedItem = (Producto)dgvProductos.CurrentRow.DataBoundItem;
+                int seleccionado = (selectedItem.IdProducto);
+                frmDetalle.SeleccionarProducto(frmABMProducto.FormMode.delete, selectedItem);
+                frmDetalle.ShowDialog();
+
+            }
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            frmABMProducto frmDetalle = new frmABMProducto();
+            frmDetalle.ShowDialog();
         }
            
     

@@ -12,7 +12,7 @@ using System.Windows.Forms;
 using Deportivo.BusinessLayer;
 using Deportivo.Entities;
 
-namespace Deportivo.GUILayer.Usuarios
+namespace Deportivo.GUILayer.Ventas
 {
     public partial class frmUsuarios : Form
     {
